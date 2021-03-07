@@ -1,5 +1,7 @@
 //const cardArr = ['1', '1', '2', '2', '3', '3', '4', '4', '5', '5', '*', '*', '#', '#', '$', '$', '+', '+', '?', '?', '@', '@', '6', '6'];
 const result = document.querySelector('.score');
+const userGusses = document.querySelector('.userGusses');
+let gusses = 0;
 document.addEventListener('DOMContentLoaded', () =>{
     const cardArr = [
         {
@@ -137,10 +139,15 @@ document.addEventListener('DOMContentLoaded', () =>{
             cards[cardNum1].setAttribute('src', '../img/clearcard.jpeg');
             cards[cardNum2].setAttribute('src', '../img/clearcard.jpeg');
             matchCards.push(chosenCard);
+            gusses ++;
+            userGusses.textContent = gusses;
+
         }
         else {
             cards[cardNum1].setAttribute('src', '../img/back.png');
             cards[cardNum2].setAttribute('src', '../img/back.png');
+            gusses ++;
+            userGusses.textContent = gusses;
         }
 
         chosenCard = [];
