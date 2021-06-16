@@ -1,4 +1,3 @@
-//const cardArr = ['1', '1', '2', '2', '3', '3', '4', '4', '5', '5', '*', '*', '#', '#', '$', '$', '+', '+', '?', '?', '@', '@', '6', '6'];
 const result = document.querySelector('.score');
 const userGusses = document.querySelector('.userGusses');
 let gusses = 0;
